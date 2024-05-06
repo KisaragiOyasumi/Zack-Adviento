@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Note that this is NOT an offcial website, this is a PeTa (Performance Task) given for us in ICT-8. (Yes I love and play Arknights)-->
+    <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="description" contents="All About Penguin Logistics">
+    <meta name="keywords" contents="HTML, CSS, JavaScript">
+    <meta name="author" contents="Ian Zackary B. Adviento">
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+  </head>
+    <body>
+    <link rel="stylesheet" href="WebsiteCSS2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="form-box">
+    <h1>Create Account</h1>
+    <div class="input-box">
+        <i class="fa fa-envelope-o"></i>
+        <input type="email" placeholder="Insert Email">
+    </div>
+    <div class="input-box">
+        <i class="fa fa-key"></i>
+        <input type="password" placeholder="Password" id="myInput">
+        <span class="eye" onclick="myFunction()">
+            <i id="hide1" class="fa fa-eye"></i>
+            <i id="hide2" class="fa fa-eye-slash"></i>
+        </span>
+    </div>
+    <button type="button" onclick="document.location='Web Page ICT 8.html'" class="signin-btn">SIGN IN</button>
+</div>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myInput");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+
+    </body>
+</html>
